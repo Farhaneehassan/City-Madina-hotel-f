@@ -39,4 +39,6 @@ function editPrice(id){let i=items.find(x=>x.id===id),p=prompt("New price for "+
 function toggle(id){let i=items.find(x=>x.id===id);i.available=!i.available;save();render();adminUI()}
 function removeItem(id){if(confirm("Delete this item?")){items=items.filter(i=>i.id!==id);delete cart[id];save();render();adminUI()}}
 render();
-</script></body></html>
+</script>
+</body>
+</html>
